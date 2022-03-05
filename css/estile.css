@@ -4,26 +4,7 @@
     padding: 0;
 }
 
-/*Eliminar bullets y numeros en las listas de viñetas...*/
-ul{
-
-    display: flex;
-    height: 200px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-    align-items: center;
-    
-}
-
 /*Características generales de texto*/
-li{
-    font-size: 20px;
-    font-family: 'Zen Kurenaido', sans-serif;
-    font-weight: 600;
-    
-}
-
 h2{
     text-decoration: underline;
 }
@@ -36,7 +17,6 @@ h3{
     font-family: 'Zen Kurenaido', sans-serif;
     font-weight: 600;
     height: fit-content;
-    
 }
 
 #p1{
@@ -44,7 +24,6 @@ h3{
     position: relative;
     top: 180px;
     right: 230px;
-    
 }
 
 #p2{
@@ -52,29 +31,21 @@ h3{
     position: relative;
     top: 200px;
     right: 470px;
-
 }
-
 
 a{
     text-decoration: none;
     color: black;
 }
 
-/*Propiedades a cada una de las etiquetas semánticas*/
+/*Propiedades a etiquetas semánticas*/
 header{
-    background-color: rgb(241, 229, 221);
     font-family: 'Roboto', sans-serif;
 }
 
-nav{
-    background-color: rgb(241, 229, 221);
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-}
 
 main{
-    background-image: linear-gradient( to bottom, rgb(253, 253, 208), rgb(255, 255, 153));
+    background-image: linear-gradient( to bottom, rgb(255, 218, 232), rgb(252, 191, 244));
     font-family: 'Roboto', sans-serif;
     height: 1500px;
     width: 100vw;
@@ -83,15 +54,14 @@ main{
 }
 
 footer{
-    background-image: url(../img/bannerfooter.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient( to left, rgb(16, 16, 77), rgb(36, 34, 53));
     font-family: 'Zen Kurenaido', sans-serif;
-    color: rgb(199, 33, 116);
+    color: white;
     font-weight: 600;
 
 }
 
+/*Propiedades a los iconos del Footer*/
 .iconFooter{
     flex-direction: row;
     margin-top: 75px;
@@ -99,14 +69,12 @@ footer{
     align-items: center;
 }
 
-
 .bi-instagram{
     font-size: 40px;
-    
 }
 
 .bi-instagram:hover{
-    filter: grayscale(1);
+    color: fuchsia;
 }
 
 .bi-facebook{
@@ -114,7 +82,7 @@ footer{
 }
 
 .bi-facebook:hover{
-    filter: grayscale(1);
+    color: fuchsia;
 }
 
 .bi-envelope{
@@ -122,13 +90,7 @@ footer{
 }
 
 .bi-envelope:hover{
-    filter: grayscale(1);
-}
-
-/*Logo de la marca y su tamaño estandar*/
-#logoMarca{
-    width: 180px;
-    height: 180px;
+    color: fuchsia;
 }
 
 /*Propiedades de títulos a nivel general*/
@@ -137,96 +99,64 @@ footer{
     text-align: center;
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .tamañoSubtitulos {
     font-style: italic;
     font-weight: lighter;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 /*Contenido del Main en HOME*/
 #mainContent1{
-
     display: grid;
     height: 1500px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 700px 400px;
+    grid-template-rows: 800px 200px 300px;
     grid-template-areas: "a1 a1"
-                         "a2 a3"
-                         "a4 a5";
+                         "a2 a2"
+                         "a3 a3";
     justify-items: center;
     align-items: center;
     justify-content: space-evenly;
     align-content: center;
     row-gap: 40px;
-    
-}
-
-
-#tituloMain1{
-    grid-area: a1;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
-    
 }
 
 #imgMain1{
-    grid-area: a2;
+    grid-area: a1;
     display: flex;
-    width: 90%;
+    width: 50%;
     height: 90%;
     justify-content: center;
     object-fit: cover;
-    
 }
 
 #imgMain1:hover{
     transform: scale(1.1, 1.1);
-    filter: brightness(1.1);
 }
 
 #parrafoMain1{
-    grid-area: a3;
+    grid-area: a2;
     width: 80%;
     height: 50%;
     align-self: center;
     justify-self: center;
-
+    font-size: 18px;
 }
+
 #imgMain2{
-    grid-area: a4;
+    grid-area: a3;
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    width: 60%;
     height: 90%;
     justify-content: center;
     align-content: center;
     object-fit: cover;
-    
 }
 
 #imgMain2:hover{
-    filter: brightness(1.1);
-}
-
-#imgMain3{
-    grid-area: a5;
-    display: flex;
-    flex-direction:column;
-    width: 80%;
-    height: 90%;
-    justify-content: center;
-    align-content: center;
-    object-fit: cover;
-}
-
-#imgMain3:hover{
-    filter: brightness(1.1);
+    filter: saturate(3);
 }
 
 /*Contenido del Main en SERVICIOS*/
@@ -254,7 +184,6 @@ footer{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
-    
 }
 
 #tituloService1{
@@ -264,7 +193,6 @@ footer{
     font-weight: bold;
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
-    
 }
 
 #imgService1{
@@ -275,7 +203,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService1:hover{
@@ -291,7 +218,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService2:hover{
@@ -307,7 +233,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService3:hover{
@@ -321,7 +246,6 @@ footer{
     height: 50%;
     align-self: center;
     justify-self: center;
-
 }
 
 #tituloService2{
@@ -341,7 +265,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService4:hover{
@@ -357,7 +280,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService5:hover{
@@ -373,7 +295,6 @@ footer{
     height: 100%;
     justify-content: center;
     align-content: center;
-    
 }
 
 #imgService6:hover{
@@ -403,7 +324,6 @@ footer{
     align-items: center;
     row-gap: 100px;
     column-gap: 40px;
-
 }
 
 #tituloGalery{
@@ -412,8 +332,6 @@ footer{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
-
-
 }
 
 #tituloGalery1{
@@ -423,7 +341,6 @@ footer{
     font-weight: bold;
     font-style: italic;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 #imgGalery1{
@@ -521,7 +438,7 @@ footer{
     display: grid;
     height: 1500px;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 450px 450px;
+    grid-template-rows: 300px 500px 500px;
     grid-template-areas: "a1"
                          "a2"
                          "a3";
@@ -543,7 +460,7 @@ footer{
     grid-area: a2;
     display: flex;
     width: 85%;
-    height: 100%;
+    height: 90%;
     justify-content: center;
 }
 
@@ -556,7 +473,7 @@ footer{
     grid-area: a3;
     display: flex;
     width: 85%;
-    height: 100%;
+    height: 90%;
     justify-content: center;
 }
 
@@ -585,7 +502,6 @@ footer{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 #formularioContacto{
@@ -599,28 +515,23 @@ footer{
     align-self: center;
     justify-self: center;
     object-fit: cover;
-
 }
 
-
+/*Propiedades de etiquetas semánticas con FlexBox*/
 #menuHeader{
     display: flex;
     height: 200px;
     border-width: 4px 4px 4px 4px;
     border-color: black black black black;
     border-style: solid solid solid solid;
-    
 }
-
-
-
 
 #menuFooter{
     display: flex;
     flex-direction: row;
     height: 250px;
     border-width: 4px 4px 4px 4px;
-    border-color: whitesmoke whitesmoke whitesmoke whitesmoke;
+    border-color: rgb(211, 72, 176) rgb(211, 72, 176) rgb(211, 72, 176) rgb(211, 72, 176);
     border-style: solid solid solid solid;
     justify-content: center;
     align-content: center;
@@ -630,78 +541,38 @@ footer{
 /*Responsive a MOBILE (menos de 600px)*/
 @media only screen and (max-width: 600px) {
 
-    #logoMarca{
-        height: 130;
-        width: 130;
-    }
-
-    #menuHeader{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 150px;
-        position:sticky;
-    }
-
-    #logoMarca{
-        width: 150px;
-        height: 150px;
-        align-items: center;
-    }
-
-    nav{
-        height: 150px;
-    }
     /*Contenido Main MOBILE HOME*/
     #mainContent1{
-        
         display: grid;
         height: 1500px;
         grid-template-columns: 100%;
-        grid-template-rows: 50px 350px 180px 250px 250px;
+        grid-template-rows: 700px 300px 300px;
         grid-template-areas:"a1"
                             "a2"
-                            "a3"
-                            "a4"
-                            "a5";
+                            "a3";
         justify-items: center;
         justify-content: center;
         align-content: center;
-        row-gap: 5px;
-        
+        row-gap: 20px;
     }
 
-    #tituloMain1{
-        grid-area: a1;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'Ubuntu', sans-serif;
-        
-    }
-    
     #imgMain1{
-        grid-area: a2;
+        grid-area: a1;
         display: flex;
         width: 75%;
-        height: 100%;
-        justify-content: center;
-        
-        
+        height: 80%;
+        justify-content: center; 
     }
     
     #parrafoMain1{
-        grid-area: a3;
+        grid-area: a2;
         align-self: center;
         justify-self: center;
         font-size: 15px;
-    
     }
 
     #imgMain2{
-        grid-area: a4;
+        grid-area: a3;
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -709,23 +580,10 @@ footer{
         justify-content: center;
         align-content: center;
         text-align: center;
-        
     }
-    
-    #imgMain3{
-        grid-area: a5;
-        display: flex;
-        flex-direction:column;
-        width: 90%;
-        height: 80%;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    
+       
     /*Contenido Main MOBILE SERVICIOS*/
     #mainContent2{
-
         display: grid;
         height: 1500px;
         grid-template-columns: 50% 50%;
@@ -749,7 +607,6 @@ footer{
         font-size: 15px;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
-        
     }
     
     #tituloService1{
@@ -759,7 +616,6 @@ footer{
         font-weight: bold;
         font-style: italic;
         font-family: 'Ubuntu', sans-serif;
-        
     }
     
     #imgService1{
@@ -770,8 +626,6 @@ footer{
         height: 100%;
         justify-content: center;
         align-content: center;
-        
-        
     }
     
     
@@ -783,7 +637,6 @@ footer{
         height: 100%;
         justify-content: center;
         align-content: center;
-        
     }
     
     #parrafoService1{
@@ -791,7 +644,6 @@ footer{
         align-self: center;
         justify-self: center;
         font-size: 15px;
-    
     }
     
     #tituloService2{
@@ -811,7 +663,6 @@ footer{
         height: 100%;
         justify-content: center;
         align-content: center;
-        
     }
     
     #imgService5{
@@ -822,7 +673,6 @@ footer{
         height: 100%;
         justify-content: center;
         align-content: center;
-        
     }
     
         
@@ -831,45 +681,6 @@ footer{
         align-self: center;
         justify-self: center;
         font-size: 15px;
-    }
-
-    #menuFooter{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 250px;
-        position:sticky;
-    }
-
-    footer{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
-    }
-
-    h3{
-
-        position:sticky;
-        font-size: 20px;
-        font-family: 'Zen Kurenaido', sans-serif;
-        font-weight: 600;
-        height: fit-content;
-        
-    }
-
-    #p1{
-        height: fit-content;
-        position: sticky
-    }
-    
-    #p2{
-        height: fit-content;
-        position: sticky
     }
 
     /*Contenido Main MOBILE GALERIA*/
@@ -887,7 +698,6 @@ footer{
         align-items: center;
         align-content: center;
         column-gap: 5px;
-    
     }
     
     #tituloGalery{
@@ -896,8 +706,6 @@ footer{
         font-size: 20px;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
-    
-    
     }
     
     #tituloGalery1{
@@ -907,7 +715,6 @@ footer{
         font-weight: bold;
         font-style: italic;
         font-family: 'Ubuntu', sans-serif;
-    
     }
     
     #imgGalery1{
@@ -1036,7 +843,6 @@ footer{
         justify-self: center;
         width: 80%;
         height: 50%;
-    
     }
 
     /*Contenido Main MOBILE CONTACTO*/
@@ -1060,7 +866,6 @@ footer{
         font-size: 20px;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
-    
     }
     
     #formularioContacto{
@@ -1073,6 +878,41 @@ footer{
         grid-area: a3;
         align-self: center;
         justify-self: center;
+    }
+
+    #menuFooter{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 250px;
+        position:sticky;
+    }
+
+    footer{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h3{
+        position: sticky;
+        font-size: 20px;
+        font-family: 'Zen Kurenaido', sans-serif;
+        font-weight: 600;
+        height: fit-content;
+    }
+
+    #p1{
+        height: fit-content;
+        position: sticky
+    }
     
+    #p2{
+        height: fit-content;
+        position: sticky
     }
 }
