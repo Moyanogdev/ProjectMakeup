@@ -17,15 +17,16 @@ h3 {
   font-weight: 600;
   height: fit-content; }
 
-#p1 {
+/*Utilización de Extend*/
+.msjFooter, .msjFooter1, .msjFooter2 {
   height: fit-content;
-  position: relative;
+  position: relative; }
+
+.msjFooter1 {
   top: 180px;
   right: 230px; }
 
-#p2 {
-  height: fit-content;
-  position: relative;
+.msjFooter2 {
   top: 200px;
   right: 470px; }
 
@@ -33,20 +34,20 @@ a {
   text-decoration: none;
   color: black; }
 
-/*Propiedades a etiquetas semánticas*/
+/*Propiedades a etiquetas semánticas y utilización de Mixin*/
 header {
   font-family: 'Roboto', sans-serif; }
 
 main {
   background-image: linear-gradient(to bottom, #ffdae8, #fcbff4);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto";
   height: 1500px;
   width: 100vw;
   max-width: 100%; }
 
 footer {
   background-image: linear-gradient(to left, #10104d, #242235);
-  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: "Zen Kurenaido";
   color: white;
   font-weight: 600; }
 
@@ -93,9 +94,7 @@ footer {
   height: 1500px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 800px 200px 300px;
-  grid-template-areas: "a1 a1"
- "a2 a2"
- "a3 a3";
+  grid-template-areas: "a1 a1" "a2 a2" "a3 a3";
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
@@ -139,13 +138,7 @@ footer {
   height: 1500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 300px 100px 100px 300px 130px;
-  grid-template-areas: "a1 a1 a1"
- "a2 a2 a2"
- "a3 a4 a5"
- "a6 a6 a6"
- "a7 a7 a7"
- "a8 a9 a10"
- "a11 a11 a11";
+  grid-template-areas: "a1 a1 a1" "a2 a2 a2" "a3 a4 a5" "a6 a6 a6" "a7 a7 a7" "a8 a9 a10" "a11 a11 a11";
   justify-items: center;
   align-items: center;
   row-gap: 40px;
@@ -272,10 +265,7 @@ footer {
   height: 1500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 400px 400px;
-  grid-template-areas: "a1 a1 a1"
- "a2 a2 a2"
- "a3 a4 a5"
- "a6 a7 a8";
+  grid-template-areas: "a1 a1 a1" "a2 a2 a2" "a3 a4 a5" "a6 a7 a8";
   justify-items: center;
   align-items: center;
   row-gap: 100px;
@@ -380,9 +370,7 @@ footer {
   height: 1500px;
   grid-template-columns: 100%;
   grid-template-rows: 300px 500px 500px;
-  grid-template-areas: "a1"
- "a2"
- "a3";
+  grid-template-areas: "a1" "a2" "a3";
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -421,8 +409,7 @@ footer {
   height: 1500px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 200px 500px;
-  grid-template-areas: "a1 a1"
- "a2 a3";
+  grid-template-areas: "a1 a1" "a2 a3";
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -472,9 +459,7 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 700px 300px 300px;
-    grid-template-areas: "a1"
- "a2"
- "a3";
+    grid-template-areas: "a1" "a2" "a3";
     justify-items: center;
     justify-content: center;
     align-content: center;
@@ -505,13 +490,7 @@ footer {
     height: 1500px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 25px 250px 150px 25px 250px 150px;
-    grid-template-areas: "a1 a1"
- "a2 a2"
- "a3 a4"
- "a5 a5"
- "a6 a6"
- "a7 a8"
- "a9 a9";
+    grid-template-areas: "a1 a1" "a2 a2" "a3 a4" "a5 a5" "a6 a6" "a7 a8" "a9 a9";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -584,11 +563,7 @@ footer {
     height: 1500px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 25px 200px 200px 200px;
-    grid-template-areas: "a1 a1"
- "a2 a2"
- "a3 a4"
- "a5 a6"
- "a7 a8";
+    grid-template-areas: "a1 a1" "a2 a2" "a3 a4" "a5 a6" "a7 a8";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -660,12 +635,7 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 50px 250px 100px 50px 250px 100px;
-    grid-template-areas: "a1"
- "a2"
- "a3"
- "a4"
- "a5"
- "a6";
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -714,9 +684,7 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 200px 350px 400px;
-    grid-template-areas: "a1"
- "a2"
- "a3";
+    grid-template-areas: "a1" "a2" "a3";
     justify-items: center;
     align-items: center;
     align-content: center;
