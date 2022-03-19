@@ -1,21 +1,24 @@
 @charset "UTF-8";
-/*Resetear los valores prestablecidos de algunas estiquetas...*/
-* {
-  margin: 0;
-  padding: 0; }
+/*Propiedades de etiquetas semánticas con FlexBox*/
+#menuHeader {
+  display: flex;
+  height: 200px;
+  border-width: 4px 4px 4px 4px;
+  border-color: black black black black;
+  border-style: solid solid solid solid; }
 
-/*Características generales de texto*/
-h2 {
-  text-decoration: underline; }
+header {
+  font-family: 'Roboto', sans-serif; }
 
-h3 {
-  position: relative;
-  top: 15px;
-  left: 320px;
-  font-size: 30px;
-  font-family: 'Zen Kurenaido', sans-serif;
-  font-weight: 600;
-  height: fit-content; }
+#menuFooter {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  border-width: 4px 4px 4px 4px;
+  border-color: #d348b0 #d348b0 #d348b0 #d348b0;
+  border-style: solid solid solid solid;
+  justify-content: center;
+  align-content: center; }
 
 /*Utilización de Extend*/
 .msjFooter, .msjFooter1, .msjFooter2 {
@@ -29,27 +32,6 @@ h3 {
 .msjFooter2 {
   top: 200px;
   right: 470px; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-/*Propiedades a etiquetas semánticas y utilización de Mixin*/
-header {
-  font-family: 'Roboto', sans-serif; }
-
-main {
-  background-image: linear-gradient(to bottom, #ffdae8, #fcbff4);
-  font-family: "Roboto";
-  height: 1500px;
-  width: 100vw;
-  max-width: 100%; }
-
-footer {
-  background-image: linear-gradient(to left, #10104d, #242235);
-  font-family: "Zen Kurenaido";
-  color: white;
-  font-weight: 600; }
 
 /*Propiedades a los iconos del Footer*/
 .iconFooter {
@@ -76,25 +58,15 @@ footer {
 .bi-envelope:hover {
   color: fuchsia; }
 
-/*Propiedades de títulos a nivel general*/
-.tamañoTitulos2 {
-  font-size: 30px;
-  text-align: center;
-  font-weight: 400;
-  font-family: 'Ubuntu', sans-serif; }
-
-.tamañoSubtitulos {
-  font-style: italic;
-  font-weight: lighter;
-  font-family: 'Ubuntu', sans-serif; }
-
 /*Contenido del Main en HOME*/
 #mainContent1 {
   display: grid;
   height: 1500px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 800px 200px 300px;
-  grid-template-areas: "a1 a1" "a2 a2" "a3 a3";
+  grid-template-areas: "a1 a1"
+ "a2 a2"
+ "a3 a3";
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
@@ -138,7 +110,13 @@ footer {
   height: 1500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 300px 100px 100px 300px 130px;
-  grid-template-areas: "a1 a1 a1" "a2 a2 a2" "a3 a4 a5" "a6 a6 a6" "a7 a7 a7" "a8 a9 a10" "a11 a11 a11";
+  grid-template-areas: "a1 a1 a1"
+ "a2 a2 a2"
+ "a3 a4 a5"
+ "a6 a6 a6"
+ "a7 a7 a7"
+ "a8 a9 a10"
+ "a11 a11 a11";
   justify-items: center;
   align-items: center;
   row-gap: 40px;
@@ -265,7 +243,10 @@ footer {
   height: 1500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 400px 400px;
-  grid-template-areas: "a1 a1 a1" "a2 a2 a2" "a3 a4 a5" "a6 a7 a8";
+  grid-template-areas: "a1 a1 a1"
+ "a2 a2 a2"
+ "a3 a4 a5"
+ "a6 a7 a8";
   justify-items: center;
   align-items: center;
   row-gap: 100px;
@@ -370,7 +351,9 @@ footer {
   height: 1500px;
   grid-template-columns: 100%;
   grid-template-rows: 300px 500px 500px;
-  grid-template-areas: "a1" "a2" "a3";
+  grid-template-areas: "a1"
+ "a2"
+ "a3";
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -409,7 +392,8 @@ footer {
   height: 1500px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 200px 500px;
-  grid-template-areas: "a1 a1" "a2 a3";
+  grid-template-areas: "a1 a1"
+ "a2 a3";
   justify-items: center;
   align-items: center;
   align-content: center;
@@ -433,23 +417,52 @@ footer {
   justify-self: center;
   object-fit: cover; }
 
-/*Propiedades de etiquetas semánticas con FlexBox*/
-#menuHeader {
-  display: flex;
-  height: 200px;
-  border-width: 4px 4px 4px 4px;
-  border-color: black black black black;
-  border-style: solid solid solid solid; }
+main {
+  background-image: linear-gradient(to bottom, #ffdae8, #fcbff4);
+  font-family: "Roboto";
+  height: 1500px;
+  width: 100vw;
+  max-width: 100%; }
 
-#menuFooter {
-  display: flex;
-  flex-direction: row;
-  height: 250px;
-  border-width: 4px 4px 4px 4px;
-  border-color: #d348b0 #d348b0 #d348b0 #d348b0;
-  border-style: solid solid solid solid;
-  justify-content: center;
-  align-content: center; }
+footer {
+  background-image: linear-gradient(to left, #10104d, #242235);
+  font-family: "Zen Kurenaido";
+  color: white;
+  font-weight: 600; }
+
+/*Resetear los valores prestablecidos de algunas estiquetas...*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Características generales de texto*/
+h2 {
+  text-decoration: underline; }
+
+h3 {
+  position: relative;
+  top: 15px;
+  left: 320px;
+  font-size: 30px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: 600;
+  height: fit-content; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/*Propiedades de títulos a nivel general*/
+.tamañoTitulos2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif; }
+
+.tamañoSubtitulos {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: 'Ubuntu', sans-serif; }
 
 /*Responsive a MOBILE (menos de 600px)*/
 @media only screen and (max-width: 600px) {
@@ -459,7 +472,9 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 700px 300px 300px;
-    grid-template-areas: "a1" "a2" "a3";
+    grid-template-areas: "a1"
+ "a2"
+ "a3";
     justify-items: center;
     justify-content: center;
     align-content: center;
@@ -490,7 +505,13 @@ footer {
     height: 1500px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 25px 250px 150px 25px 250px 150px;
-    grid-template-areas: "a1 a1" "a2 a2" "a3 a4" "a5 a5" "a6 a6" "a7 a8" "a9 a9";
+    grid-template-areas: "a1 a1"
+ "a2 a2"
+ "a3 a4"
+ "a5 a5"
+ "a6 a6"
+ "a7 a8"
+ "a9 a9";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -563,7 +584,11 @@ footer {
     height: 1500px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 25px 200px 200px 200px;
-    grid-template-areas: "a1 a1" "a2 a2" "a3 a4" "a5 a6" "a7 a8";
+    grid-template-areas: "a1 a1"
+ "a2 a2"
+ "a3 a4"
+ "a5 a6"
+ "a7 a8";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -635,7 +660,12 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 50px 250px 100px 50px 250px 100px;
-    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
+    grid-template-areas: "a1"
+ "a2"
+ "a3"
+ "a4"
+ "a5"
+ "a6";
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -684,7 +714,9 @@ footer {
     height: 1500px;
     grid-template-columns: 100%;
     grid-template-rows: 200px 350px 400px;
-    grid-template-areas: "a1" "a2" "a3";
+    grid-template-areas: "a1"
+ "a2"
+ "a3";
     justify-items: center;
     align-items: center;
     align-content: center;

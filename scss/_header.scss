@@ -1,0 +1,12 @@
+/*Propiedades de etiquetas semánticas con FlexBox*/
+#menuHeader{
+    display: flex;
+    height: 200px;
+    border-width: 4px 4px 4px 4px;
+    border-color: black black black black;
+    border-style: solid solid solid solid;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+}

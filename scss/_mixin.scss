@@ -1,0 +1,19 @@
+@mixin estiloSemanticas( $colorFondo, $tipoLetra) {
+    background-image: $colorFondo;
+    font-family: $tipoLetra;
+    
+}
+main{
+    @include estiloSemanticas( linear-gradient( to bottom, rgb(255, 218, 232), rgb(252, 191, 244)), 'Roboto');
+    height: 1500px;
+    width: 100vw;
+    max-width: 100%;
+    
+}
+
+footer{
+    @include estiloSemanticas( linear-gradient( to left, rgb(16, 16, 77), rgb(36, 34, 53)), 'Zen Kurenaido');
+    color: white;
+    font-weight: 600;
+
+}
