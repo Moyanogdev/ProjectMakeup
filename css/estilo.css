@@ -7,6 +7,10 @@ h3{
     font-style: italic;
 }
 
+hr{
+    color: fuchsia;
+}
+
 .navHeader .active{
     text-decoration: underline wavy fuchsia;
     text-underline-offset: 7px;
@@ -99,7 +103,7 @@ h3{
     border-width: 2px, 2px, 2px, 2px;
 }
 
-.imgArtistico:hover{
+.imgGaleria:hover{
     transform: scale(1.1, 1.1);
 }
 

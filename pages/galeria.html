@@ -18,21 +18,24 @@
 <body>
 
     <header>
+        <!--Barra de navegación - bootstrap navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navHeader">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logoMarcaJanet2.png" alt="" width="200" height="100">
+                    <!--Imagen con el logo de la marca-->
+                    <img src="../img/logoMarcaJanet2.png" alt="Logo de la marca" width="200" height="100">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="../index.html">Home</a>
-                <a class="nav-link" href="servicios.html">Servicios</a>
-                <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
-                <a class="nav-link" href="sobremi.html">Sobre mi</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                    <!--Contenido de la barra de navegación - 5 secciones-->
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                    <a class="nav-link" href="sobremi.html">Sobre mi</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </div>
             </div>
             </div>
@@ -40,30 +43,34 @@
     </header> 
 
     <main class="container">
+        <!--Sección de Galería de trabajos - bootstrap-->
         <section class="row justify-content-center text-center" id="mainGalery">
             <h2 class="col-12 display-4 text-capitalize mb-5">
                 Algunos de mis trabajos
             </h2>
+            <!--Galería Editorial-->
             <h3 class="text-capitalize">Editorial/Producciones</h3>
+            <!--Carousel de imágenes con bootstrap tipo slide-->
             <div id="imgCarousel" class="carousel slide col-10 col-mb-10 col-lg-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../img/imgRouxurie1.JPG" class="d-block w-100" alt="...">  
+                        <img src="../img/imgRouxurie1.JPG" class="d-block w-100" alt="Imagen Producción personal">  
                     </div>
                 
                     <div class="carousel-item">
-                    <img src="../img/imgRouxurie2.JPG" class="d-block w-100" alt="">
+                    <img src="../img/imgRouxurie2.JPG" class="d-block w-100" alt="Imagen Producción modelo Editorial">
                     </div>
                     <div class="carousel-item">
-                            <img src="../img/imgRouxurie3.JPG" class="d-block w-100" alt="">
+                            <img src="../img/imgRouxurie3.JPG" class="d-block w-100" alt="Imagen Producción modelo Editorial">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/imgRouxurie4.JPG" class="d-block w-100" alt="">
+                        <img src="../img/imgRouxurie4.JPG" class="d-block w-100" alt="Imagen Producción modelo Editorial">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/imgRouxurie5.JPG" class="d-block w-100" alt="">
+                        <img src="../img/imgRouxurie5.JPG" class="d-block w-100" alt="Imagen Producción modelo Editorial">
                     </div>
                 </div>
+                <!--Botones para avanzar y retroceder en el carousel de imágenes - bootstrap-->
                 <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -74,37 +81,42 @@
                 </button>
                 <p class="text-muted">Fotos campaña Rouxurie.</p>
             </div>
+            <!--Explicación sobre Editorial y producciones-->
             <p class="textoMedio">Son maquillajes frescos que resaltan lo natural de la modelo y que acompañan a la campaña que se va a realizar. El trabajo se desempeña en conjunto con la marca, donde se debe cumplir con las exigencias que determine la misma.</p>
             
 
 
         </section>
 
+        <!--Galería Social-->
         <section class="row justify-content-around">
             <h3 class="text-capitalize text-center">Social</h3>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoSocial1.jpg" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoSocial1.jpg" alt="Trabajo cliente maquillaje social" class="w-100 rounded imgGaleria">
             </div>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoSocial2.jpg" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoSocial2.jpg" alt="Trabajo cliente maquillaje social" class="w-100 rounded imgGaleria">
             </div>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoSocial3.jpg" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoSocial3.jpg" alt="Trabajo cliente maquillaje social" class="w-100 rounded imgGaleria">
             </div>
+            <!--Explicación sobre maquillaje social-->
             <p class="textoMedio">Maquillaje ideal para fiestas, casamientos, egresos, quinceañeras, etc. Es un maquillaje donde el cliente es el protagonista y se busca resaltar su belleza según la tipología y caracteristica del rostro. Puede ir desde un maquillaje natural a uno más cargado aplicando las últimas tendencias.</p>
         </section>
 
+        <!--Galería Artístico-->
         <section class="row justify-content-around">
             <h3 class="text-capitalize text-center">Artístico</h3>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoArtistica1.jpg" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoArtistica1.jpg" alt="Maquillaje Artístico Sombra" class="w-100 rounded imgGaleria">
             </div>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoArtistica2.JPG" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoArtistica2.JPG" alt="Foto Artístico Payaso" class="w-100 rounded imgGaleria">
             </div>
             <div class="col-10 col-mb-10 col-lg-3 bg-white p-3 fw-light">
-                <img src="../img/fotoArtistica3.JPG" alt="Foto Artistico" class="w-100 rounded imgArtistico">
+                <img src="../img/fotoArtistica3.JPG" alt="Foto Artístico Galaxia" class="w-100 rounded imgGaleria">
             </div>
+            <!--Explicación sobre maquillaje artístico-->
             <p class="textoMedio">Maquillaje para fiestas de disfraces, halloween, teatro y eventos en general, donde se utilizan productos cremosos, ceras, calvas y todo lo necesario para lograr el efecto deseado.</p>
         </section>
 
@@ -113,11 +125,13 @@
     </main>
 
     <footer>
+        <!--Pie de página con el logo de la marca-->
         <div class="container">
             <div class="row justify-content-center text-center bg-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../img/logoMarcaJanet2.png" alt="" width="200" height="100">
+                    <img src="../img/logoMarcaJanet2.png" alt="Logo de la marca" width="200" height="100">
                 </a>
+                <!--Barra de navegación incluída en el Footer-->
                 <nav class="nav col-11 justify-content-center mb-4">
                     <a class="nav-link" href="../index.html">Home</a>
                     <a class="nav-link" href="servicios.html">Servicios</a>
@@ -125,6 +139,7 @@
                     <a class="nav-link" href="sobremi.html">Sobre mi</a>
                     <a class="nav-link" href="contacto.html">Contacto</a>
                 </nav>
+                    <!--Iconos de redes sociales-->
                     <div class="icon-social-networks">
                         <h4 class="text-center">Encontrame en mis redes sociales</h4>
                         <p>
