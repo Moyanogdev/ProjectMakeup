@@ -1,0 +1,7 @@
+/*Mixin General*/
+
+@mixin textGeneral( $margenTextoSup , $tamanioFuente , $alineadoTexto){
+    margin-top: $margenTextoSup;
+    font-size: $tamanioFuente;
+    text-align: $alineadoTexto;
+}

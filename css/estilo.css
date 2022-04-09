@@ -1,161 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@charset "UTF-8";
+/*Variables generales*/
+/*Mixin General*/
+/*Estilos Generales*/
+* {
+  margin: 0;
+  padding: 0; }
 
-h3{
-    font-style: italic;
-}
+h3 {
+  font-style: italic; }
 
-hr{
-    color: fuchsia;
-}
+hr {
+  color: fuchsia; }
 
-.navHeader .active{
-    text-decoration: underline wavy fuchsia;
-    text-underline-offset: 7px;
-}
+/*Estilos generales a contenedores de las distintas secciones*/
+.navHeader .active {
+  text-decoration: underline wavy fuchsia;
+  text-underline-offset: 7px; }
 
-.mainHome{
-    margin-top: 100px;
-}
+.mainHome {
+  margin-top: 100px; }
 
-.mainHome2{
-    margin-bottom: 80px;
-}
+.mainHome2 {
+  margin-bottom: 80px; }
 
-.mainContacto{
-    margin-top: 80px;
-}
+.mainContacto {
+  margin-top: 80px; }
 
-#mainService{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
+#mainService {
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
-#mainService2{
-    margin-bottom: 80px;
-}
+#mainService2 {
+  margin-bottom: 80px; }
 
-#mainGalery{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
+#mainGalery {
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
-#mainSobremi{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
+#mainSobremi {
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
-.imgJanet{
-    margin-bottom: 100px;
-}
+/*Estilo a Títulos y texto del sitio*/
+.tituloSecundario, .tituloCv {
+  margin-top: 70px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
 
-.tituloSecundario{
-    margin-top: 70px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 50px;
-}
+.tituloCv {
+  font-size: 25px; }
 
-.tituloCv{
-    margin-top: 70px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    text-align: center;
-}
+.textoMedio {
+  margin-top: 70px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif; }
 
-#imgCarousel{
-    margin-top: 40px;
-}
+.subtituloService {
+  margin-top: 20px; }
 
-#imgCarousel:hover{
-    transform: scale(1.1, 1.1);
-}
+.nav-link {
+  color: fuchsia; }
 
-.textoMedio{
-    margin-top: 70px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
+/*Estilo y propiedades al formulario*/
+.formContacto {
+  background-image: linear-gradient(to left, #d15fb8, #ad4782);
+  margin-top: 50px;
+  margin-bottom: 70px; }
 
-.formContacto{
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
+.form-label {
+  color: white; }
 
-.botonCv{
-    margin-bottom: 100px;
-    align-content: center;
-}
-
-.imgAutomaquillaje:hover{
+/*Estilo al botón del Curriculum para descarga*/
+.botonCv {
+  background-color: fuchsia;
+  margin-bottom: 100px;
+  align-content: center; }
+  .botonCv:hover {
     border-style: solid;
-    border-color: fuchsia;
-    border-width: 2px, 2px, 2px, 2px;
-}
+    border-color: black;
+    border-width: 2px; }
 
-.imgService:hover{
-    border-style: solid;
-    border-color: fuchsia;
-    border-width: 2px, 2px, 2px, 2px;
-}
+/*Estilo al maps en sección Contacto*/
+.mapContacto {
+  margin-bottom: 80px; }
 
-.imgGaleria:hover{
-    transform: scale(1.1, 1.1);
-}
+/*Estilo a Imágenes del sitio*/
+.imgJanet {
+  margin-bottom: 100px; }
 
-.imgMain2:hover{
-    border-style: solid;
-    border-color: fuchsia;
-    border-width: 2px, 2px, 2px, 2px;
-}
+.imgHover:hover, .imgAutomaquillaje:hover, .imgMain2:hover {
+  border-style: solid;
+  border-color: fuchsia;
+  border-width: 2px, 2px, 2px, 2px; }
 
-.imgPresentacion{
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
+.imgGaleria:hover {
+  transform: scale(1.1, 1.1); }
 
-.imgPresentacion:hover{
-    filter: brightness(1.1);
-}
+.imgPresentacion {
+  margin-top: 70px;
+  margin-bottom: 10px; }
+  .imgPresentacion:hover {
+    filter: brightness(1.1); }
 
-.imagenesService{
-    margin-top: 70px;
-}
+.imagenesService {
+  margin-top: 80px; }
 
-.subtituloService{
-    margin-top: 20px;
-}
+#imgCarousel {
+  margin-top: 40px; }
+  #imgCarousel:hover {
+    transform: scale(1.1, 1.1); }
 
-.nav-link{
-    color: fuchsia;
-}
+/*Estilo a iconos de redes sociales*/
+.bi-instagram {
+  font-size: 25px;
+  margin-right: 10px; }
+  .bi-instagram:hover {
+    color: fuchsia; }
 
-.bi-instagram{
-    font-size: 25px;
-    margin-right: 10px;
-}
+.bi-envelope {
+  font-size: 25px;
+  margin-right: 10px; }
+  .bi-envelope:hover {
+    color: fuchsia; }
 
-.bi-instagram:hover{
-    color: fuchsia;
-}
-
-.bi-envelope:hover{
-    color: fuchsia;
-}
-
-.bi-whatsapp:hover{
-    color: fuchsia;
-}
-
-.bi-envelope{
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-.bi-whatsapp{
-    font-size: 25px;
-}
+.bi-whatsapp {
+  font-size: 25px; }
+  .bi-whatsapp:hover {
+    color: fuchsia; }

@@ -1,0 +1,165 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "general.scss";
+
+/*Estilos generales a contenedores de las distintas secciones*/
+.navHeader .active{
+    text-decoration: underline wavy $colorContraste;
+    text-underline-offset: 7px;
+}
+
+.mainHome{
+    margin-top: 100px;
+}
+
+.mainHome2{
+    margin-bottom: $marginGeneral;
+}
+
+.mainContacto{
+    margin-top: $marginGeneral;
+}
+
+#mainService{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+#mainService2{
+    margin-bottom: $marginGeneral;
+}
+
+#mainGalery{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+#mainSobremi{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+/*Estilo a Títulos y texto del sitio*/
+.tituloSecundario{
+    @include textGeneral( 70px, 50px, center);
+    font-family: $fontStyle;
+}
+
+.tituloCv{
+    @extend .tituloSecundario;
+    font-size: 25px;
+}
+
+.textoMedio{
+    @include textGeneral( 70px, 20px, center);
+    margin-bottom: 50px;
+    font-family: $fontStyle;
+}
+
+.subtituloService{
+    margin-top: 20px;
+}
+
+.nav-link{
+    color: $colorContraste;
+}
+
+/*Estilo y propiedades al formulario*/
+.formContacto{
+    background-image: linear-gradient(to left, rgb(209, 95, 184), rgb(173, 71, 130));
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.form-label{
+    color: white;
+}
+
+/*Estilo al botón del Curriculum para descarga*/
+.botonCv{
+    background-color: $colorContraste;
+    margin-bottom: 100px;
+    align-content: center;
+
+    &:hover{
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+}
+
+/*Estilo al maps en sección Contacto*/
+.mapContacto{
+    margin-bottom: $marginGeneral;
+
+}
+
+/*Estilo a Imágenes del sitio*/
+.imgJanet{
+    margin-bottom: 100px;
+}
+
+.imgHover:hover{
+    border-style: solid;
+    border-color: $colorContraste;
+    border-width: 2px, 2px, 2px, 2px;
+}
+.imgAutomaquillaje:hover{
+    @extend .imgHover;
+}
+
+.imgMain2:hover{
+    @extend .imgHover;
+}
+
+.imgGaleria:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.imgPresentacion{
+    margin-top: 70px;
+    margin-bottom: 10px;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+.imagenesService{
+    margin-top: $marginGeneral;
+}
+
+#imgCarousel{
+    margin-top: 40px;
+
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+/*Estilo a iconos de redes sociales*/
+.bi-instagram{
+    font-size: $iconSize;
+    margin-right: 10px;
+
+    &:hover{
+        color: $colorContraste;
+    }
+}
+
+.bi-envelope{
+    font-size: $iconSize;
+    margin-right: 10px;
+
+    &:hover{
+        color: $colorContraste;
+    }
+}
+
+.bi-whatsapp{
+    font-size: $iconSize;
+
+    &:hover{
+        color: $colorContraste;
+    }
+}
