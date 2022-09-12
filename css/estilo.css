@@ -64,40 +64,42 @@ hr {
 .nav-link {
   color: fuchsia; }
 
-/*Estilo y propiedades al formulario*/
-.formContacto {
-  background-image: linear-gradient(to left, #d15fb8, #ad4782);
-  margin-top: 50px;
-  margin-bottom: 70px; }
-
-.form-label {
-  color: white; }
-
 /*Estilo al botón del Curriculum para descarga*/
 .botonCv {
-  background-color: fuchsia;
+  background-color: #1b1b1b;
   margin-bottom: 100px;
   align-content: center; }
   .botonCv:hover {
     border-style: solid;
-    border-color: black;
+    border-color: fuchsia;
     border-width: 2px; }
 
 /*Estilo al maps en sección Contacto*/
 .mapContacto {
   margin-bottom: 80px; }
 
+/*Estilo y propiedades al formulario*/
+.form-control {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #f1f1f1; }
+
+.botonContacto {
+  border-color: fuchsia;
+  border-style: solid;
+  border-width: 2px; }
+  .botonContacto:hover {
+    font-weight: 600; }
+
 /*Estilo a Imágenes del sitio*/
 .imgJanet {
   margin-bottom: 100px; }
 
-.imgHover:hover, .imgAutomaquillaje:hover, .imgMain2:hover {
+.imgHover:hover, .imgAutomaquillaje:hover, .imgMain2:hover, .imgGaleria:hover {
   border-style: solid;
   border-color: fuchsia;
   border-width: 2px, 2px, 2px, 2px; }
-
-.imgGaleria:hover {
-  transform: scale(1.1, 1.1); }
 
 .imgPresentacion {
   margin-top: 70px;
@@ -113,20 +115,35 @@ hr {
   #imgCarousel:hover {
     transform: scale(1.1, 1.1); }
 
+/*Estilo barra de navegación Footer*/
+.navFooter .active {
+  text-decoration: underline wavy fuchsia;
+  text-underline-offset: 7px; }
+
+.nav-linkFooter:hover {
+  color: fuchsia;
+  font-weight: 600; }
+
 /*Estilo a iconos de redes sociales*/
 .bi-instagram {
   font-size: 25px;
   margin-right: 10px; }
   .bi-instagram:hover {
-    color: fuchsia; }
+    color: fuchsia;
+    transition: .3s ease-in-out;
+    cursor: pointer; }
 
 .bi-envelope {
   font-size: 25px;
   margin-right: 10px; }
   .bi-envelope:hover {
-    color: fuchsia; }
+    color: fuchsia;
+    transition: .3s ease-in-out;
+    cursor: pointer; }
 
 .bi-whatsapp {
   font-size: 25px; }
   .bi-whatsapp:hover {
-    color: fuchsia; }
+    color: fuchsia;
+    transition: .3s ease-in-out;
+    cursor: pointer; }

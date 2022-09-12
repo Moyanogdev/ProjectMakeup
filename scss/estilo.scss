@@ -64,26 +64,15 @@
     color: $colorContraste;
 }
 
-/*Estilo y propiedades al formulario*/
-.formContacto{
-    background-image: linear-gradient(to left, rgb(209, 95, 184), rgb(173, 71, 130));
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-
-.form-label{
-    color: white;
-}
-
 /*Estilo al botón del Curriculum para descarga*/
 .botonCv{
-    background-color: $colorContraste;
+    background-color: rgb(27, 27, 27);
     margin-bottom: 100px;
     align-content: center;
 
     &:hover{
         border-style: solid;
-        border-color: black;
+        border-color: $colorContraste;
         border-width: 2px;
     }
 }
@@ -92,6 +81,24 @@
 .mapContacto{
     margin-bottom: $marginGeneral;
 
+}
+
+/*Estilo y propiedades al formulario*/
+.form-control{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(241, 241, 241);
+}
+
+.botonContacto{
+    border-color: $colorContraste;
+    border-style: solid;
+    border-width: 2px;
+
+    &:hover{
+        font-weight: 600;
+    }
 }
 
 /*Estilo a Imágenes del sitio*/
@@ -113,7 +120,7 @@
 }
 
 .imgGaleria:hover{
-    transform: scale(1.1, 1.1);
+    @extend .imgHover;
 }
 
 .imgPresentacion{
@@ -137,6 +144,17 @@
     }
 }
 
+/*Estilo barra de navegación Footer*/
+.navFooter .active{
+    text-decoration: underline wavy $colorContraste;
+    text-underline-offset: 7px;
+}
+
+.nav-linkFooter:hover{
+    color: $colorContraste;
+    font-weight: 600;
+}
+
 /*Estilo a iconos de redes sociales*/
 .bi-instagram{
     font-size: $iconSize;
@@ -144,6 +162,8 @@
 
     &:hover{
         color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
     }
 }
 
@@ -153,6 +173,8 @@
 
     &:hover{
         color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
     }
 }
 
@@ -161,5 +183,7 @@
 
     &:hover{
         color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
     }
 }
