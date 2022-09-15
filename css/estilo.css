@@ -10,11 +10,11 @@ h3 {
   font-style: italic; }
 
 hr {
-  color: fuchsia; }
+  color: #FF00A0; }
 
 /*Estilos generales a contenedores de las distintas secciones*/
 .navHeader .active {
-  text-decoration: underline wavy fuchsia;
+  text-decoration: underline wavy #FF00A0;
   text-underline-offset: 7px; }
 
 .mainHome {
@@ -62,16 +62,19 @@ hr {
   margin-top: 20px; }
 
 .nav-link {
-  color: fuchsia; }
+  color: #FF00A0; }
 
 /*Estilo al botón del Curriculum para descarga*/
 .botonCv {
   background-color: #1b1b1b;
   margin-bottom: 100px;
-  align-content: center; }
+  align-content: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px; }
   .botonCv:hover {
     border-style: solid;
-    border-color: fuchsia;
+    border-color: #FF00A0;
     border-width: 2px; }
 
 /*Estilo al maps en sección Contacto*/
@@ -84,9 +87,14 @@ hr {
   border-style: solid;
   border-width: 2px;
   background-color: #f1f1f1; }
+  .form-control:focus {
+    border-color: #FF00A0;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #f1f1f1; }
 
 .botonContacto {
-  border-color: fuchsia;
+  border-color: #FF00A0;
   border-style: solid;
   border-width: 2px; }
   .botonContacto:hover {
@@ -98,8 +106,9 @@ hr {
 
 .imgHover:hover, .imgAutomaquillaje:hover, .imgMain2:hover, .imgGaleria:hover {
   border-style: solid;
-  border-color: fuchsia;
-  border-width: 2px, 2px, 2px, 2px; }
+  border-color: #FF00A0;
+  border-width: 2px, 2px, 2px, 2px;
+  transition: .2s ease; }
 
 .imgPresentacion {
   margin-top: 70px;
@@ -110,18 +119,13 @@ hr {
 .imagenesService {
   margin-top: 80px; }
 
-#imgCarousel {
-  margin-top: 40px; }
-  #imgCarousel:hover {
-    transform: scale(1.1, 1.1); }
-
 /*Estilo barra de navegación Footer*/
 .navFooter .active {
-  text-decoration: underline wavy fuchsia;
+  text-decoration: underline wavy #FF00A0;
   text-underline-offset: 7px; }
 
 .nav-linkFooter:hover {
-  color: fuchsia;
+  color: #FF00A0;
   font-weight: 600; }
 
 /*Estilo a iconos de redes sociales*/
@@ -129,7 +133,7 @@ hr {
   font-size: 25px;
   margin-right: 10px; }
   .bi-instagram:hover {
-    color: fuchsia;
+    color: #FF00A0;
     transition: .3s ease-in-out;
     cursor: pointer; }
 
@@ -137,13 +141,13 @@ hr {
   font-size: 25px;
   margin-right: 10px; }
   .bi-envelope:hover {
-    color: fuchsia;
+    color: #FF00A0;
     transition: .3s ease-in-out;
     cursor: pointer; }
 
 .bi-whatsapp {
   font-size: 25px; }
   .bi-whatsapp:hover {
-    color: fuchsia;
+    color: #FF00A0;
     transition: .3s ease-in-out;
     cursor: pointer; }

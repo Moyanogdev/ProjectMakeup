@@ -69,6 +69,9 @@
     background-color: rgb(27, 27, 27);
     margin-bottom: 100px;
     align-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 
     &:hover{
         border-style: solid;
@@ -89,6 +92,13 @@
     border-style: solid;
     border-width: 2px;
     background-color: rgb(241, 241, 241);
+
+    &:focus{
+        border-color: $colorContraste;
+        border-style: solid;
+        border-width: 2px;
+        background-color: rgb(241, 241, 241);
+    }
 }
 
 .botonContacto{
@@ -110,7 +120,9 @@
     border-style: solid;
     border-color: $colorContraste;
     border-width: 2px, 2px, 2px, 2px;
+    transition: .2s ease;
 }
+
 .imgAutomaquillaje:hover{
     @extend .imgHover;
 }
@@ -134,14 +146,6 @@
 
 .imagenesService{
     margin-top: $marginGeneral;
-}
-
-#imgCarousel{
-    margin-top: 40px;
-
-    &:hover{
-        transform: scale(1.1, 1.1);
-    }
 }
 
 /*Estilo barra de navegación Footer*/
