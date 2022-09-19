@@ -191,3 +191,14 @@
         cursor: pointer;
     }
 }
+
+.moyanogdev{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover{
+        color: $colorContraste;
+        transition: .3s ease-in-out;
+    }
+}

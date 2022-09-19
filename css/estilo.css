@@ -151,3 +151,11 @@ hr {
     color: #FF00A0;
     transition: .3s ease-in-out;
     cursor: pointer; }
+
+.moyanogdev {
+  color: black;
+  text-decoration: none;
+  font-weight: 500; }
+  .moyanogdev:hover {
+    color: #FF00A0;
+    transition: .3s ease-in-out; }
