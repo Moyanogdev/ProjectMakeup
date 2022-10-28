@@ -65,20 +65,40 @@
 }
 
 /*Estilo al botón del Curriculum para descarga*/
-.botonCv{
-    background-color: rgb(27, 27, 27);
-    margin-bottom: 100px;
-    align-content: center;
+.botonCv a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
     border-style: solid;
+    border-width: 1px;
     border-color: black;
-    border-width: 2px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
 
     &:hover{
-        border-style: solid;
-        border-color: $colorContraste;
-        border-width: 2px;
+        color: white;
     }
 }
+
+.botonCv a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorContraste;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonCv a:hover span{
+    width: 100%;
+}
+
 
 /*Estilo al maps en sección Contacto*/
 .mapContacto{
@@ -101,14 +121,38 @@
     }
 }
 
-.botonContacto{
-    border-color: $colorContraste;
+.botonContacto a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
+    border-color: black;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
 
     &:hover{
-        font-weight: 600;
+        color: white;
     }
+}
+
+.botonContacto a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorContraste;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonContacto a:hover span{
+    width: 100%;
 }
 
 /*Estilo a Imágenes del sitio*/

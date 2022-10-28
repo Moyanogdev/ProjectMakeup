@@ -18,11 +18,10 @@
 <body>
 
     <header>
-        <!--Barra de navegación - bootstrap navbar-->
+        <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navHeader">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <!--Imagen con el logo de la marca-->
                     <img src="../img/logoMarcaJanet.png" alt="Logo de la marca" width="270" height="120">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +29,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <!--Contenido de la barra de navegación - 5 secciones-->
                         <a class="nav-link" href="../index.html">Home</a>
                         <a class="nav-link" href="servicios.html">Servicios</a>
                         <a class="nav-link" href="galeria.html">Galería</a>
@@ -42,34 +40,31 @@
         </nav>
     </header> 
 
-    <!--Sección Sobre mi - bootstrap-->
+    <!-- Sección Sobre mi -->
     <div class="container mainSobremi">
         <main class="row align-items-center main-sobremi" id="mainSobremi">
             <h2 class="col-12 display-4 text-capitalize mb-3 text-center">Sobre Mi</h2>
             <div class="col-12 col-md-4 col-lg-5 imgPresentacion">
-                <!--Imagen personal tipo Biográfica-->
                 <img src="../img/fotoPresentacion.jpg" alt="Imagen Janet personal" class="w-100">
             </div>
-            <!--Comentarios sobre experiencia y datos personales-->
             <div class="col md 7 p-3">
                 <p class="textoMedio">Mi nombre es Janet Annie Kilic Aslan, vivo en la ciudad de Córdoba, Argentina. Soy maquilladora profesional y tengo experiencia en maquillaje Social, Artístico y Editorial. Realicé producciones junto a la marca de lencería Rouxurie en varias ocasiones y participé con artístas como Lima de Souza, entre otros. Desde muy chica me interesé en el mundo de la moda y en la colorimetría, y luego de estar varios años en contacto con la estética femenina, decidí iniciarme de manera profesional en el maquillaje y reafirmé mi pasión por ello. En mis trabajos constantemente estoy en la búsqueda de superarme y emprender nuevos desafíos que destaquen, siempre buscando la satisfacción total del cliente y que esté a gusto con el resultado. En la actualidad busco seguir perfeccionándome en las nuevas tendencias que exige este trabajo.</p>
             </div>
 
-            <!--Estudios realizados-->
             <section>
                 <h2 class="tituloSecundario">Mis Estudios</h2>
                 <p class="textoMedio">En el año 2018 me formé como Asesora de Imagen en Espacio Buenos Aires (EBA), para luego comenzar a realizar estudios de maquillaje. Entre ellos, puedo mencionar la carrera de Maquillaje Profesional en la Academia de Natatha Nina (Ciudad de Buenos Aires), prestigiosa maquilladora social y de maquillaje de Instagram. También realicé un perfeccionamiento de maquillaje social en Estudio HP y, un curso de maquillaje editorial dictado por Juan Gasparini en Academia MYA, ambos en la Ciudad de Córdoba.</p>
-                <div class="text-center">
-                    <!--Enlance y boton de descarga de CV.-->
-                    <a href="" download="cvJanetKilic" class="btn rounded-pill px-4 botonCv text-white">Descargar CV</a>
+                <div class="text-center botonCv">
+                    <a href="#" download="cvJanetKilic""><span></span>Descargar CV</a>
                 </div>
             </section>
 
 
         </main>
     </div>
+    
+    <!-- Pie de página -->
     <footer class="bg-light">
-        <!--Pie de página con el logo de la marca-->
         <div class="container">
             <div class="row justify-content-center text-center">
                 <a class="navbar-brand" href="index.html">
@@ -106,6 +101,7 @@
 
     </footer>
 
+    <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
