@@ -16,3 +16,33 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// CONTACT FORM
+
+/*
+const btn = document.getElementById('button');
+const msjConfirm = document.getElementById("msjConfirm");
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.value = ' Enviando... ';
+
+const serviceID = '';
+const templateID = ''; 
+
+emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        msjConfirm.innerHTML = "Mensaje enviado correctamente"
+        setTimeout(function(){
+            msjConfirm.innerHTML = ""
+        },5000)
+        form.reset()
+    }, (err) => {
+        btn.value = 'Enviar';
+        alert(JSON.stringify(err));
+        });
+});
+
+*/
