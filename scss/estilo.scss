@@ -1,0 +1,294 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "general.scss";
+
+/*Estilos generales a contenedores de las distintas secciones*/
+.navHeader .active{
+    text-decoration: underline wavy $colorContraste;
+    text-underline-offset: 7px;
+}
+
+.mainHome{
+    margin-top: 100px;
+}
+
+.mainHome2{
+    margin-bottom: $marginGeneral;
+}
+
+.mainContacto{
+    margin-top: $marginGeneral;
+}
+
+#mainService{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+#mainService2{
+    margin-bottom: $marginGeneral;
+}
+
+#mainGalery{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+#mainSobremi{
+    margin-top: $marginGeneral;
+    margin-bottom: $marginGeneral;
+}
+
+/*Estilo a Títulos y texto del sitio*/
+.tituloSecundario{
+    @include textGeneral( 70px, 50px, center);
+    font-family: $fontStyle;
+}
+
+.tituloCv{
+    @extend .tituloSecundario;
+    font-size: 25px;
+}
+
+.textoMedio{
+    @include textGeneral( 70px, 20px, center);
+    margin-bottom: 50px;
+    font-family: $fontStyle;
+}
+
+.subtituloService{
+    margin-top: 20px;
+}
+
+.nav-link{
+    color: $colorContraste;
+}
+
+/*Estilo al botón del Curriculum para descarga*/
+.botonCv a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.botonCv a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorContraste;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonCv a:hover span{
+    width: 100%;
+}
+
+/* Estilo al botón Contactar en Servicios */
+
+.botonServicios a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.botonServicios a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorContraste;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonServicios a:hover span{
+    width: 100%;
+}
+
+
+/*Estilo al maps en sección Contacto*/
+.mapContacto{
+    margin-bottom: $marginGeneral;
+
+}
+
+/*Estilo y propiedades al formulario*/
+.form-control{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(241, 241, 241);
+
+    &:focus{
+        border-color: $colorContraste;
+        border-style: solid;
+        border-width: 2px;
+        background-color: rgb(241, 241, 241);
+    }
+}
+
+.botonContacto button{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.botonContacto button span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorContraste;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.botonContacto button:hover span{
+    width: 100%;
+}
+
+#msjConfirm{
+    color: $colorContraste;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*Estilo a Imágenes del sitio*/
+.imgJanet{
+    margin-bottom: 100px;
+}
+
+.imgHover:hover{
+    border-style: solid;
+    border-color: $colorContraste;
+    border-width: 2px, 2px, 2px, 2px;
+    transition: .2s ease;
+}
+
+.imgAutomaquillaje:hover{
+    @extend .imgHover;
+}
+
+.imgMain2:hover{
+    @extend .imgHover;
+}
+
+.imgGaleria:hover{
+    @extend .imgHover;
+}
+
+.imgPresentacion{
+    margin-top: 70px;
+    margin-bottom: 10px;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+.imagenesService{
+    margin-top: $marginGeneral;
+}
+
+/*Estilo barra de navegación Footer*/
+.navFooter .active{
+    text-decoration: underline wavy $colorContraste;
+    text-underline-offset: 7px;
+}
+
+.nav-linkFooter:hover{
+    color: $colorContraste;
+}
+
+/*Estilo a iconos de redes sociales*/
+.bi-instagram{
+    font-size: $iconSize;
+    margin-right: 10px;
+    color: black;
+
+    &:hover{
+        color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.bi-envelope{
+    font-size: $iconSize;
+    margin-right: 10px;
+    color: black;
+
+    &:hover{
+        color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.bi-whatsapp{
+    font-size: $iconSize;
+    color: black;
+
+    &:hover{
+        color: $colorContraste;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.moyanogdev{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover{
+        color: $colorContraste;
+        transition: .3s ease-in-out;
+    }
+}
